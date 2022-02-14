@@ -1,0 +1,162 @@
+* {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "SourceSansPro-Regular";
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("SourceSansPro-Regular.ttf");
+}
+.pagina {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  box-shadow: 0 0 6px #ccc;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1rem;
+}
+
+.cajaLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  background-image: url(./logo-meteologica.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 225px;
+  height: 32px;
+}
+
+.nombrePagina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 71px 1rem 0.5rem 1rem;
+}
+
+.ultimosValores {
+  border-color: #00cc76;
+  border-width: 2px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 14px;
+}
+.tituloUltimosValores {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.25rem 0rem 0.25rem 0rem;
+  border-bottom: 2px solid #00cc76;
+  text-align: center;
+}
+
+.cajaDatos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  justify-content: space-between;
+  width: 170px;
+  padding-top: 0.5rem;
+}
+
+.dato {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.cajaDato {
+  background-color: #fff;
+  width: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.avisos {
+  border-color: #00cc76;
+  border-width: 2px;
+  border-style: solid;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 0rem 1rem 0.5rem 1rem;
+  border-radius: 14px;
+  height: 138px;
+}
+
+.cajaAvisos {
+  overflow-y: scroll;
+}
+
+.cajaGrafico {
+  display: flex;
+  flex-direction: column;
+  border-color: #00cc76;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0rem 1rem 0.5rem 1rem;
+  border-radius: 14px;
+  margin: 0.5rem 1rem 0rem 1rem;
+  padding: 0.5rem 0.25rem 0.25rem 0.25rem;
+}
+
+.textoEje {
+  font-size: 0.9rem;
+  color: #838383;
+}
+.textoHora {
+  font-size: 0.9rem;
+  color: #838383;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .info {
+    flex-direction: column;
+  }
+  .cajaDatos {
+    width: 100%;
+  }
+  .datos {
+    margin-right: 1rem;
+  }
+  .avisos {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
